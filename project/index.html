@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrot & Stick</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="brand" href="#top">Carrot & Stick</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#puzzle">The Puzzle</a>
+        <a href="#mechanism">The Mechanism</a>
+        <a href="#carrots">Carrots</a>
+        <a href="#sticks">Sticks</a>
+        <a href="#cost">The Cost</a>
+        <a href="#implications">Implications</a>
+        <a href="#targeting">Targeting</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="top" class="hero-section">
+      <div class="section-inner">
+        <p class="eyebrow">CORNELL UNIVERSITY · HOUSING POLICY RESEARCH</p>
+        <h1>Carrot & Stick: Why Building More Doesn't Always Lower Rents, and What NYC Can Do About It</h1>
+        <p class="hero-copy">New research on how housing incentives and affordability mandates actually work — and what each policy costs, and who pays.</p>
+        <p class="hero-meta">Daniel Lebret, Crocker H. Liu & Maxence Valentin · Cornell University & ETH Zurich · 2026</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#">Read the Working Paper</a>
+          <a class="button button-secondary" href="#">Download Policy Brief</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="puzzle" class="content-section">
+      <div class="section-inner">
+        <p class="section-label">01 · THE PUZZLE</p>
+        <h2>Housing production is up. So are rents. Why?</h2>
+        <div class="section-copy">
+          <p>New York City has added tens of thousands of housing units over the past decade. Yet rents have kept climbing, and affordability pressures show no sign of easing. The standard explanation — that more supply should lower prices — seems to be failing.</p>
+          <p>It isn't failing. It's just incomplete.</p>
+          <p>In mature cities like New York, housing supply doesn't work the way introductory economics suggests. There is no empty margin to build on. Instead, new construction means replacing what's already there — tearing down older, depreciated buildings and putting up newer, taller ones. That replacement process changes not just how many units exist, but what kinds of units they are. And that distinction turns out to matter enormously for rents, affordability, and policy design.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="mechanism" class="content-section section-alt">
+      <div class="section-inner">
+        <p class="section-label">02 · THE MECHANISM</p>
+        <h2>Replacement, not expansion</h2>
+        <div class="section-copy">
+          <p>When a developer tears down a rent-discounted walk-up in Bushwick and builds a new 12-story building, something that looks like a supply increase is also a composition shift. The new units enter the market without accumulated depreciation, at higher rents than what they replaced. More units, but higher average rents.</p>
+          <p>We call this the replacement effect — and in New York City, it systematically offsets the downward pressure on rents that additional supply would otherwise produce.</p>
+          <p>This doesn't mean building is bad. It means the policy question is more specific than 'build more or build less.' The right questions are: which parcels get redeveloped, when, at what density, and under what conditions. Those are exactly the levers that housing policy controls — and exactly what this research quantifies.</p>
+        </div>
+        <aside class="quote-block">
+          <p>“The replacement effect is equally strong measured per square foot — and holds even when accounting for the observed trend toward smaller unit sizes in NYC construction since 2000.”</p>
+        </aside>
+        <div class="figure-block">
+          <img src="assets/figures/figure-6-unit-size-trend.png" alt="Weighted Average Size of Constructed Units in NYC" onerror="showFigurePlaceholder(this)" />
+          <div class="figure-placeholder"><span>Figure G1 · Weighted Average Size of Constructed Units in NYC (Rolling Average, PLUTO Data)</span></div>
+        </div>
+        <div class="figure-block">
+          <img src="assets/figures/figure-3-rent-decomposition.png" alt="Expected Rent Decomposition" onerror="showFigurePlaceholder(this)" />
+          <div class="figure-placeholder"><span>Figure VI · Counterfactual Results — Expected Rent Decomposition. Replacement effect dominates supply effect across all six policy counterfactuals.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="carrots" class="content-section">
+      <div class="section-inner">
+        <p class="section-label">03 · CARROTS</p>
+        <h2>Tax exemptions and density bonuses — not interchangeable</h2>
+        <div class="section-copy">
+          <p>NYC's housing toolkit includes two main types of incentives: property tax exemptions (like the former 421-a program) and density bonuses (upzoning and floor-area ratio increases). Both expand housing supply. They do not work the same way.</p>
+          <p>Tax exemptions work on timing. By reducing post-construction tax liability, they make redevelopment profitable sooner — pulling forward projects that would otherwise sit on the margin for years. The effect is broad: it raises redevelopment probabilities across a wide range of parcels, concentrating new construction in areas with older buildings and significant unused density. Western Brooklyn and Queens respond most strongly. The tradeoff is fiscal: the city foregoes substantial tax revenue during the exemption window.</p>
+          <p>Density bonuses work on scale. By allowing taller buildings, they increase the value of redevelopment — but they also increase the value of waiting. A developer who can build 15 stories instead of 10 may rationally hold off until rents are high enough to justify the larger project. The result is that density bonuses often delay construction on parcels near the redevelopment threshold, even as they increase the size of projects that do eventually get built. High-value locations benefit most; marginal parcels may actually see lower near-term redevelopment probabilities.</p>
+        </div>
+        <div class="key-finding">
+          <p>Tax exemptions and density bonuses are not substitutes. A city that relies on only one is leaving a meaningful lever untouched. Stacking both tools produces the largest supply expansion — accelerating redevelopment while also increasing density conditional on redevelopment.</p>
+        </div>
+        <div class="figure-block">
+          <img src="assets/figures/figure-1-policy-instruments.png" alt="Property Value and Development Probability with Respect to Each Policy Instrument" onerror="showFigurePlaceholder(this)" />
+          <div class="figure-placeholder"><span>Figure I · Property Value and Development Probability with Respect to Each Policy Instrument</span></div>
+        </div>
+        <div class="figure-block">
+          <img src="assets/figures/figure-4-spatial-maps.png" alt="Spatial Heterogeneity in Policy Response" onerror="showFigurePlaceholder(this)" />
+          <div class="figure-placeholder"><span>Figure IV · Spatial Heterogeneity in Policy Response — Upzoning vs. Tax Exemptions across NYC Community Districts</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sticks" class="content-section section-alt">
+      <div class="section-inner">
+        <p class="section-label">04 · STICKS</p>
+        <h2>What affordability mandates actually deliver</h2>
+        <div class="section-copy">
+          <p>Affordable housing mandates — requirements that a share of units in new construction be rented below market rate — are the most direct tool for producing affordable units. They are also the most widely misunderstood.</p>
+          <p>What mandates accomplish: They reallocate access to new construction. When a mandate requires 30% of units in a new building to be affordable, those units are genuinely below market rate — and they genuinely reach households who would otherwise be priced out of new construction entirely.</p>
+          <p>What mandates don't accomplish: They don't expand the bottom of the rent distribution in the way policymakers often hope. The affordable units produced through mandates tend to appear in new buildings on higher-value parcels — because those are the projects where redevelopment still pencils out despite the affordability requirement. The lowest-rent housing in NYC continues to be supplied by the existing aging stock, not by mandated units in new construction.</p>
+          <p>Mandates also reduce the net return to redevelopment. Developers on marginal parcels delay or forgo projects when a mandate is imposed. The result is fewer total units than would otherwise be built, with the reduction concentrated in market-rate units. This is why mandates work best when paired with incentives — the carrots offset the supply-dampening effect of the stick.</p>
+        </div>
+        <div class="figure-block">
+          <img src="assets/figures/figure-2-production-scatter.png" alt="Change in Affordable vs. Market-Rate Housing Production" onerror="showFigurePlaceholder(this)" />
+          <div class="figure-placeholder"><span>Figure III · Policy Counterfactuals — Change in Affordable vs. Market-Rate Housing Production. Points below the 45-degree line indicate net contractions in total housing stock.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cost" class="content-section">
+      <div class="section-inner">
+        <p class="section-label">05 · THE COST</p>
+        <h2>Who pays for each mandated affordable unit?</h2>
+        <div class="section-copy">
+          <p>Because below-market housing is not privately profitable, affordability mandates create a gap between private returns and public objectives. Someone has to absorb that gap. Our analysis makes explicit who that is — and how the answer depends entirely on which policy instrument is used.</p>
+          <p>Each mandated affordable unit carries an approximate cost of $65,000 in foregone value, split between private landowners and the public sector. But the split depends on the instrument.</p>
+          <p>Under tax exemptions paired with mandates, the cost falls almost entirely on the public sector — through foregone property tax revenues during the exemption window. Landowners are largely held harmless. The city bears the burden.</p>
+          <p>Under density bonuses paired with mandates, the cost is shared more evenly. Landowners absorb roughly half through lower land value capitalization; the public sector absorbs the rest. Neither side escapes unscathed, but neither bears the full cost alone.</p>
+        </div>
+        <div class="key-finding">
+          <p>Fiscal instruments are politically easier to pass — landowners support them — but expensive for city budgets. Regulatory instruments preserve public revenues but face stronger opposition from property owners. Understanding this tradeoff is essential for designing the next generation of NYC affordable housing programs.</p>
+        </div>
+        <div class="figure-block">
+          <img src="assets/figures/figure-5-cost-per-unit.png" alt="Cost of Mandated Affordable Housing" onerror="showFigurePlaceholder(this)" />
+          <div class="figure-placeholder"><span>Figure VIII · Cost of Mandated Affordable Housing — Required Incentives, Cost Per Unit, and Incidence by Policy Instrument</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="implications" class="content-section section-alt">
+      <div class="section-inner">
+        <p class="section-label">06 · POLICY IMPLICATIONS</p>
+        <h2>Three takeaways for program design</h2>
+        <div class="implication-grid">
+          <article class="implication-card">
+            <div class="implication-number">01</div>
+            <h3>Stack the tools</h3>
+            <p>The largest supply gains — in both market-rate and affordable units — come from combining tax exemptions, density bonuses, and affordability mandates. Each instrument operates on a different margin of the redevelopment decision. Using all three simultaneously produces outcomes no single instrument can achieve alone.</p>
+          </article>
+          <article class="implication-card">
+            <div class="implication-number">02</div>
+            <h3>Design for the margin</h3>
+            <p>Policy effects are not uniform across the city. Parcels near their redevelopment threshold respond strongly to tax incentives but weakly to density bonuses. High-value locations respond to density bonuses but are less sensitive to fiscal incentives. Effective program design targets the right instrument at the right parcel type.</p>
+          </article>
+          <article class="implication-card">
+            <div class="implication-number">03</div>
+            <h3>Don't expect mandates to reach the lowest-rent households</h3>
+            <p>Affordable units produced through inclusionary requirements tend to cluster in new buildings on higher-value sites — above the bottom quintile of the rent distribution. Reaching the lowest-income households requires preserving and improving the existing aging stock, not just mandating affordability in new construction.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="targeting" class="content-section">
+      <div class="section-inner">
+        <p class="section-badge">FORTHCOMING RESULTS</p>
+        <p class="section-label">07 · WHERE TO TARGET</p>
+        <h2>Not all neighborhoods are the same</h2>
+        <div class="section-copy">
+          <p>Not all neighborhoods are the same, and not all policy tools work equally well everywhere. A forthcoming extension of this research evaluates targeted policy interventions across three distinct types of opportunity zones in NYC.</p>
+          <p>High-demand parcels — concentrated in Manhattan, western Brooklyn, and western Queens, where rent potential is highest and density bonuses carry the most value.</p>
+          <p>High-obsolescence parcels — concentrated in Brooklyn, where aging building stock makes tax exemptions most effective at pulling forward redevelopment.</p>
+          <p>High unused-capacity parcels — concentrated in the Bronx, where significant FAR headroom exists but demand conditions have kept development below the redevelopment threshold.</p>
+          <p>The spatial non-overlap across these three groups is itself a finding: the parcels that need density bonuses are not the same parcels that need tax exemptions. Spatially targeted policy outperforms one-size-fits-all program design — and this research will quantify by how much.</p>
+        </div>
+        <div class="figure-block">
+          <img src="assets/figures/figure-7-targeted-parcels.png" alt="Targeted Parcels by Criterion" onerror="showFigurePlaceholder(this)" />
+          <div class="figure-placeholder"><span>Figure H1 · Targeted Parcels by Criterion — High Demand, High Obsolescence, High Unused Capacity (NYC Community Districts)</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p class="footer-brand">Carrot & Stick</p>
+        <p>Cornell University Housing Policy Research · 2026</p>
+        <p class="footer-small">Daniel Lebret · Crocker H. Liu · Maxence Valentin</p>
+      </div>
+      <div class="footer-right">
+        <a href="#" class="footer-link">Working Paper (coming soon)</a>
+        <a href="#" class="footer-link">Contact the Authors</a>
+      </div>
+    </div>
+    <div class="footer-note">
+      <p>This research is based on a forward-looking spatial model calibrated to parcel-level data from New York City's 765,000 residential parcels. Results are from a working paper under review.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
