@@ -238,10 +238,9 @@ img {
 
 .figure-block img {
   width: 100%;
-  min-height: 400px;
-  object-fit: cover;
-  background: var(--gray-200);
-  border: 2px dashed var(--gray-300);
+  height: auto;
+  display: block;
+  box-sizing: border-box;
 }
 
 .figure-placeholder {
@@ -294,10 +293,9 @@ img {
 
 .figure-subblock img {
   width: 100%;
-  min-height: 300px;
-  object-fit: cover;
-  background: var(--gray-200);
-  border: 2px dashed var(--gray-300);
+  height: auto;
+  display: block;
+  box-sizing: border-box;
 }
 
 .figure-subblock .figure-placeholder {
